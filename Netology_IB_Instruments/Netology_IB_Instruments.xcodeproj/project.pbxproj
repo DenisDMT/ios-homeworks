@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		262393E227CE2FA00014E0CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262393E127CE2FA00014E0CF /* AppDelegate.swift */; };
-		262393E427CE2FA00014E0CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262393E327CE2FA00014E0CF /* SceneDelegate.swift */; };
-		262393E627CE2FA00014E0CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262393E527CE2FA00014E0CF /* ViewController.swift */; };
-		262393E927CE2FA00014E0CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262393E727CE2FA00014E0CF /* Main.storyboard */; };
-		262393EB27CE2FA20014E0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262393EA27CE2FA20014E0CF /* Assets.xcassets */; };
-		262393EE27CE2FA20014E0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262393EC27CE2FA20014E0CF /* LaunchScreen.storyboard */; };
+		2683F5C927CE761F00B2FB94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2683F5C827CE761F00B2FB94 /* AppDelegate.swift */; };
+		2683F5CB27CE761F00B2FB94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2683F5CA27CE761F00B2FB94 /* SceneDelegate.swift */; };
+		2683F5CD27CE761F00B2FB94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2683F5CC27CE761F00B2FB94 /* ViewController.swift */; };
+		2683F5D227CE762100B2FB94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2683F5D127CE762100B2FB94 /* Assets.xcassets */; };
+		2683F5D527CE762100B2FB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2683F5D327CE762100B2FB94 /* LaunchScreen.storyboard */; };
+		2683F5DE27CE8E0B00B2FB94 /* Фото.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2683F5DD27CE8E0B00B2FB94 /* Фото.jpg */; };
+		2683F5E227CE992900B2FB94 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2683F5E127CE992900B2FB94 /* ProfileView.xib */; };
+		2683F5E427CE99BD00B2FB94 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2683F5E327CE99BD00B2FB94 /* ProfileView.swift */; };
+		2683F5E627CE99DF00B2FB94 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2683F5E527CE99DF00B2FB94 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		262393DE27CE2FA00014E0CF /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		262393E127CE2FA00014E0CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		262393E327CE2FA00014E0CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		262393E527CE2FA00014E0CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		262393E827CE2FA00014E0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		262393EA27CE2FA20014E0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		262393ED27CE2FA20014E0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		262393EF27CE2FA20014E0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2683F5C527CE761F00B2FB94 /* Netology_IB_Instruments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netology_IB_Instruments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2683F5C827CE761F00B2FB94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2683F5CA27CE761F00B2FB94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2683F5CC27CE761F00B2FB94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2683F5D127CE762100B2FB94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2683F5D427CE762100B2FB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2683F5D627CE762100B2FB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2683F5DD27CE8E0B00B2FB94 /* Фото.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Фото.jpg"; path = "../../../ГитПапка/Фото.jpg"; sourceTree = "<group>"; };
+		2683F5E127CE992900B2FB94 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		2683F5E327CE99BD00B2FB94 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2683F5E527CE99DF00B2FB94 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		262393DB27CE2FA00014E0CF /* Frameworks */ = {
+		2683F5C227CE761F00B2FB94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +43,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		262393D527CE2FA00014E0CF = {
+		2683F5BC27CE761F00B2FB94 = {
 			isa = PBXGroup;
 			children = (
-				262393E027CE2FA00014E0CF /* Navigation */,
-				262393DF27CE2FA00014E0CF /* Products */,
+				2683F5C727CE761F00B2FB94 /* Netology_IB_Instruments */,
+				2683F5C627CE761F00B2FB94 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		262393DF27CE2FA00014E0CF /* Products */ = {
+		2683F5C627CE761F00B2FB94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				262393DE27CE2FA00014E0CF /* Navigation.app */,
+				2683F5C527CE761F00B2FB94 /* Netology_IB_Instruments.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		262393E027CE2FA00014E0CF /* Navigation */ = {
+		2683F5C727CE761F00B2FB94 /* Netology_IB_Instruments */ = {
 			isa = PBXGroup;
 			children = (
-				262393E127CE2FA00014E0CF /* AppDelegate.swift */,
-				262393E327CE2FA00014E0CF /* SceneDelegate.swift */,
-				262393E527CE2FA00014E0CF /* ViewController.swift */,
-				262393E727CE2FA00014E0CF /* Main.storyboard */,
-				262393EA27CE2FA20014E0CF /* Assets.xcassets */,
-				262393EC27CE2FA20014E0CF /* LaunchScreen.storyboard */,
-				262393EF27CE2FA20014E0CF /* Info.plist */,
+				2683F5C827CE761F00B2FB94 /* AppDelegate.swift */,
+				2683F5CA27CE761F00B2FB94 /* SceneDelegate.swift */,
+				2683F5CC27CE761F00B2FB94 /* ViewController.swift */,
+				2683F5D127CE762100B2FB94 /* Assets.xcassets */,
+				2683F5D327CE762100B2FB94 /* LaunchScreen.storyboard */,
+				2683F5D627CE762100B2FB94 /* Info.plist */,
+				2683F5DD27CE8E0B00B2FB94 /* Фото.jpg */,
+				2683F5E127CE992900B2FB94 /* ProfileView.xib */,
+				2683F5E327CE99BD00B2FB94 /* ProfileView.swift */,
+				2683F5E527CE99DF00B2FB94 /* Profile.storyboard */,
 			);
-			path = Navigation;
+			path = Netology_IB_Instruments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		262393DD27CE2FA00014E0CF /* Navigation */ = {
+		2683F5C427CE761F00B2FB94 /* Netology_IB_Instruments */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 262393F227CE2FA20014E0CF /* Build configuration list for PBXNativeTarget "Navigation" */;
+			buildConfigurationList = 2683F5D927CE762100B2FB94 /* Build configuration list for PBXNativeTarget "Netology_IB_Instruments" */;
 			buildPhases = (
-				262393DA27CE2FA00014E0CF /* Sources */,
-				262393DB27CE2FA00014E0CF /* Frameworks */,
-				262393DC27CE2FA00014E0CF /* Resources */,
+				2683F5C127CE761F00B2FB94 /* Sources */,
+				2683F5C227CE761F00B2FB94 /* Frameworks */,
+				2683F5C327CE761F00B2FB94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Navigation;
-			productName = Navigation;
-			productReference = 262393DE27CE2FA00014E0CF /* Navigation.app */;
+			name = Netology_IB_Instruments;
+			productName = Netology_IB_Instruments;
+			productReference = 2683F5C527CE761F00B2FB94 /* Netology_IB_Instruments.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		262393D627CE2FA00014E0CF /* Project object */ = {
+		2683F5BD27CE761F00B2FB94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					262393DD27CE2FA00014E0CF = {
+					2683F5C427CE761F00B2FB94 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 262393D927CE2FA00014E0CF /* Build configuration list for PBXProject "Navigation" */;
+			buildConfigurationList = 2683F5C027CE761F00B2FB94 /* Build configuration list for PBXProject "Netology_IB_Instruments" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +119,50 @@
 				en,
 				Base,
 			);
-			mainGroup = 262393D527CE2FA00014E0CF;
-			productRefGroup = 262393DF27CE2FA00014E0CF /* Products */;
+			mainGroup = 2683F5BC27CE761F00B2FB94;
+			productRefGroup = 2683F5C627CE761F00B2FB94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				262393DD27CE2FA00014E0CF /* Navigation */,
+				2683F5C427CE761F00B2FB94 /* Netology_IB_Instruments */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		262393DC27CE2FA00014E0CF /* Resources */ = {
+		2683F5C327CE761F00B2FB94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262393EE27CE2FA20014E0CF /* LaunchScreen.storyboard in Resources */,
-				262393EB27CE2FA20014E0CF /* Assets.xcassets in Resources */,
-				262393E927CE2FA00014E0CF /* Main.storyboard in Resources */,
+				2683F5E227CE992900B2FB94 /* ProfileView.xib in Resources */,
+				2683F5D527CE762100B2FB94 /* LaunchScreen.storyboard in Resources */,
+				2683F5E627CE99DF00B2FB94 /* Profile.storyboard in Resources */,
+				2683F5DE27CE8E0B00B2FB94 /* Фото.jpg in Resources */,
+				2683F5D227CE762100B2FB94 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		262393DA27CE2FA00014E0CF /* Sources */ = {
+		2683F5C127CE761F00B2FB94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262393E627CE2FA00014E0CF /* ViewController.swift in Sources */,
-				262393E227CE2FA00014E0CF /* AppDelegate.swift in Sources */,
-				262393E427CE2FA00014E0CF /* SceneDelegate.swift in Sources */,
+				2683F5E427CE99BD00B2FB94 /* ProfileView.swift in Sources */,
+				2683F5CD27CE761F00B2FB94 /* ViewController.swift in Sources */,
+				2683F5C927CE761F00B2FB94 /* AppDelegate.swift in Sources */,
+				2683F5CB27CE761F00B2FB94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		262393E727CE2FA00014E0CF /* Main.storyboard */ = {
+		2683F5D327CE762100B2FB94 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				262393E827CE2FA00014E0CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		262393EC27CE2FA20014E0CF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				262393ED27CE2FA20014E0CF /* Base */,
+				2683F5D427CE762100B2FB94 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		262393F027CE2FA20014E0CF /* Debug */ = {
+		2683F5D727CE762100B2FB94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		262393F127CE2FA20014E0CF /* Release */ = {
+		2683F5D827CE762100B2FB94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +286,7 @@
 			};
 			name = Release;
 		};
-		262393F327CE2FA20014E0CF /* Debug */ = {
+		2683F5DA27CE762100B2FB94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,10 +294,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Navigation/Info.plist;
+				INFOPLIST_FILE = Netology_IB_Instruments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Profile;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -302,7 +306,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TitarenkoDM.Navigation;
+				PRODUCT_BUNDLE_IDENTIFIER = "TitarenkoDM.Netology-IB-Instruments";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,7 +314,7 @@
 			};
 			name = Debug;
 		};
-		262393F427CE2FA20014E0CF /* Release */ = {
+		2683F5DB27CE762100B2FB94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,10 +322,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Navigation/Info.plist;
+				INFOPLIST_FILE = Netology_IB_Instruments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Profile;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -330,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TitarenkoDM.Navigation;
+				PRODUCT_BUNDLE_IDENTIFIER = "TitarenkoDM.Netology-IB-Instruments";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		262393D927CE2FA00014E0CF /* Build configuration list for PBXProject "Navigation" */ = {
+		2683F5C027CE761F00B2FB94 /* Build configuration list for PBXProject "Netology_IB_Instruments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				262393F027CE2FA20014E0CF /* Debug */,
-				262393F127CE2FA20014E0CF /* Release */,
+				2683F5D727CE762100B2FB94 /* Debug */,
+				2683F5D827CE762100B2FB94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		262393F227CE2FA20014E0CF /* Build configuration list for PBXNativeTarget "Navigation" */ = {
+		2683F5D927CE762100B2FB94 /* Build configuration list for PBXNativeTarget "Netology_IB_Instruments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				262393F327CE2FA20014E0CF /* Debug */,
-				262393F427CE2FA20014E0CF /* Release */,
+				2683F5DA27CE762100B2FB94 /* Debug */,
+				2683F5DB27CE762100B2FB94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 262393D627CE2FA00014E0CF /* Project object */;
+	rootObject = 2683F5BD27CE761F00B2FB94 /* Project object */;
 }
