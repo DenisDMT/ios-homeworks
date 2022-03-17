@@ -10,9 +10,9 @@ import UIKit
 class PostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemBlue
+        self.view.backgroundColor = .white
         
-        let myButton = UIBarButtonItem(image: UIImage(systemName: "info.circle"), style: .plain, target: self,action: #selector(didTapButton))
+        let myButton = UIBarButtonItem(image: UIImage(systemName: "info.circle"), style: .plain, target: self, action: #selector(didTapButton))
         self.navigationItem.rightBarButtonItem = myButton
     }
     

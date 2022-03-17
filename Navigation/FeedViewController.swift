@@ -15,7 +15,7 @@ class FeedViewController: UIViewController {
     
     let lastPost = Post.init(title: "Мой пост")
     
-    let transitionButton: UIButton = {
+    let postButton: UIButton = {
         let button = UIButton(type: .system)
         button.layer.cornerRadius = 12
         button.clipsToBounds = true
@@ -23,12 +23,15 @@ class FeedViewController: UIViewController {
         button.setTitle("Перейти на пост", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        
         return button
     }()
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(transitionButton)
+        self.view.addSubview(postButton)
         self.setupButton()
     }
     
@@ -39,11 +42,11 @@ class FeedViewController: UIViewController {
     }
     
     private func setupButton() {
-        transitionButton.addTarget(self,action: #selector(didTapTransitionButton), for: .touchUpInside)
-        self.transitionButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        self.transitionButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10).isActive = true
-        self.transitionButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10).isActive = true
-        self.transitionButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        postButton.addTarget(self,action: #selector(didTapTransitionButton), for: .touchUpInside)
+        self.postButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        self.postButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10).isActive = true
+        self.postButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10).isActive = true
+        self.postButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
     @objc private  func didTapTransitionButton() {

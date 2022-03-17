@@ -24,7 +24,8 @@ class TabBarController: UITabBarController {
         var image: UIImage? {
             switch self {
             case .feed:
-                return UIImage(systemName: "house.circle")
+                return UIImage(systemName: "music.house.fill")
+                
             case .profile:
                 return UIImage(systemName: "person.circle")
             }
@@ -37,7 +38,7 @@ class TabBarController: UITabBarController {
     }
     
     func setupTabBar() {
-        let items: [TabBarItem] = [.profile, .feed]
+        let items: [TabBarItem] = [.feed, .profile]
         self.viewControllers = items.map({ tabBarItem in
             switch  tabBarItem {
             case .feed:
