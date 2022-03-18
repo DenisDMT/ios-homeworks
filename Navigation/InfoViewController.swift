@@ -19,7 +19,7 @@ class InfoViewController: UIViewController {
   
     let alertButton: UIButton = {
         let button = UIButton(type: .system)
-        button.layer.cornerRadius = 15
+        button.layer.cornerRadius = 14
         button.clipsToBounds = true
         button.backgroundColor = .systemYellow
         button.setTitle("Показать оповещение", for: .normal)
