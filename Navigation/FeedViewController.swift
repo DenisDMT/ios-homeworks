@@ -15,43 +15,40 @@ class FeedViewController: UIViewController {
     
     let lastPost = Post.init(title: "Мой пост")
     
-    let postButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.layer.cornerRadius = 12
-        button.clipsToBounds = true
-        button.backgroundColor = .systemBlue
-        button.setTitle("Перейти на пост", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        
-        return button
-    }()
-   
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(postButton)
-        self.setupButton()
+        view.backgroundColor = .yellow
+        self.myButton ()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.title = "Моя Лента"
+        self.navigationItem.title = "Моя лента"
     }
     
-    private func setupButton() {
-        postButton.addTarget(self,action: #selector(didTapTransitionButton), for: .touchUpInside)
-        self.postButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        self.postButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10).isActive = true
-        self.postButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10).isActive = true
-        self.postButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    
+    private func myButton() {
+        
+        let button = UIButton(frame: CGRect(x: 50, y: 700, width: 300, height: 50))
+        //button.center = view.center// кнопка будет по центру
+        button.setTitle("Перейти в пост", for: .normal)
+        button.backgroundColor = .green
+        button.layer.cornerRadius = 15
+        button.setTitleColor(.black, for: .normal)
+        button.addTarget(self, action: #selector(tapAction), for: .touchUpInside)
+        view.addSubview(button)// добавление кнопки !!
+        
+        
     }
     
-    @objc private  func didTapTransitionButton() {
-        let postVC = PostViewController()
-        postVC.navigationItem.title = lastPost.title
-        self.navigationController?.pushViewController(postVC, animated: true)
+    
+    @objc private func tapAction(){
+        
+        let vc = PostViewController()
+        vc.navigationItem.title = lastPost.title
+        self.navigationController?.pushViewController(vc, animated: true) // появляется в стеке
+        
     }
 }

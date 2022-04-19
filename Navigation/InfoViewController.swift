@@ -11,45 +11,40 @@ class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemFill
-        self.view.addSubview(alertButton)
-        self.setupButton()
+        view.backgroundColor = .lightGray
+        alertButton()
+        
     }
     
-  
-    let alertButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.layer.cornerRadius = 14
-        button.clipsToBounds = true
-        button.backgroundColor = .systemYellow
+    private func alertButton(){
+        let button = UIButton(frame: CGRect(x: 50, y: 700, width: 300, height: 50))
+        //button.center = view.center// кнопка будет по центру
         button.setTitle("Показать оповещение", for: .normal)
+        button.backgroundColor = .systemBlue
+        button.layer.cornerRadius = 15
         button.setTitleColor(.black, for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
-    
-    
-    private func setupButton() {
-        alertButton.addTarget(self, action: #selector(didAlertButton), for: .touchUpInside)
-        self.alertButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        self.alertButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
-        self.alertButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
-        self.alertButton.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        button.clipsToBounds = true
+        button.addTarget(self, action: #selector(alertAction), for: .touchUpInside)
+        view.addSubview(button)// появление кнопки
     }
     
-    @objc private func didAlertButton() {
-        let alert = UIAlertController(title: "Внимание", message: "Вы хотите этого ?", preferredStyle: .alert)
-        let yesButton = UIAlertAction(title: "Yes", style: .default, handler: {action in print("Yes")})
-        let noButton = UIAlertAction(title: "No", style: .default, handler: {action in print("No")})
-        alert.addAction(yesButton)
-        alert.addAction(noButton)
-        present (alert, animated: true, completion: nil)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.title = "Моя Лента"
+    @objc private func alertAction(){
+        
+        let alert = UIAlertController(title: "Перейти назад", message: "Вы точно хотите выйти?", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Выйти", style: .default) { _ in
+            self.dismiss(animated: true)
+            //            self.navigationController?.popViewController(animated: true)
+            print("Выйти")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Отмена", style: .destructive, handler: {action in print("Отмена")})
+        
+        alert.addAction(cancelAction)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+        
     }
 }
+
 

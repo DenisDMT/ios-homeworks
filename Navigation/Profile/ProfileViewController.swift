@@ -9,30 +9,16 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    
     private lazy var profileHeaderView: ProfileHeaderView = {
         let view = ProfileHeaderView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = .white
-        self.setupNavigationBar()
-        self.viewWillLayoutSubviews()
-    }
-    
-    private func setupNavigationBar() {
-        self.navigationController?.navigationBar.prefersLargeTitles = false
-        self.navigationItem.title = "Profile"
-    }
-    
-    override func viewWillLayoutSubviews() {
+    override func viewWillLayoutSubviews(){  // это добавляет profileHeaderView на вью
         self.view.addSubview(self.profileHeaderView)
-        
         self.profileHeaderView.backgroundColor = .lightGray
-        
         let topConstraint = self.profileHeaderView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
         let leadingConstraint = self.profileHeaderView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor)
         let trailingConstraint = self.profileHeaderView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor)
@@ -40,8 +26,23 @@ class ProfileViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             topConstraint, leadingConstraint, trailingConstraint,bottomConstraint
-                                    ])
+        ])
         
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = .white
+        self.setupNavigationBar()//добавляет title запуская функцию
+        //view.addSubview(imageView)// добавляет фото
+    }
+    
+    func setupNavigationBar() {
+        
+        self.navigationItem.title = "Профиль"
+    }
+    
+    
 }
+
 

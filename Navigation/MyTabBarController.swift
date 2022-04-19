@@ -7,51 +7,35 @@
 
 import UIKit
 
-class TabBarController: UITabBarController {
+class MyTabBarController: UITabBarController {
     
-    private enum TabBarItem {
-        case feed
-        case profile
-        
-        var title:  String {
-            switch self{
-            case .feed:
-                return "Лента"
-            case .profile:
-                return "Профиль"
-            }
-        }
-        var image: UIImage? {
-            switch self {
-            case .feed:
-                return UIImage(systemName: "music.house.fill")
-                
-            case .profile:
-                return UIImage(systemName: "person.circle")
-            }
-        }
-    }
+    let lenta = FeedViewController()//лента
+    let profile = ProfileViewController()// профиль
     
-    override func viewDidLoad(){
+    
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupTabBar()
+        view.backgroundColor = .systemBlue
+        mayController()
+        
     }
     
-    func setupTabBar() {
-        let items: [TabBarItem] = [.feed, .profile]
-        self.viewControllers = items.map({ tabBarItem in
-            switch  tabBarItem {
-            case .feed:
-                return UINavigationController(rootViewController: FeedViewController())
-            case .profile:
-                return UINavigationController(rootViewController: ProfileViewController())
-            }
-        })
+    private func mayController(){
         
-        self.viewControllers?.enumerated().forEach({ (index, vc) in
-            vc.tabBarItem.title = items[index].title
-            vc.tabBarItem.image = items[index].image
-        })
+        
+        lenta.tabBarItem.title = "Лента"
+        lenta.tabBarItem.image = UIImage(systemName: "heart.fill")//moon.stars.fill, externaldrive.badge.plus
+        
+        profile.tabBarItem.title = "Профиль"
+        profile.tabBarItem.image = UIImage(systemName: "person.circle")//heart.fill , square.stack.3d.down.right.fill
+        let navControllerFirst = UINavigationController(rootViewController: lenta)
+        
+        let navControllerSecond = UINavigationController(rootViewController: profile)
+        
+        viewControllers = [navControllerFirst, navControllerSecond]
+        
     }
+    
+    
 }
-
