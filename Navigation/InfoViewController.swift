@@ -34,7 +34,7 @@ class InfoViewController: UIViewController {
         
         let okAction = UIAlertAction(title: "Выйти", style: .default) { _ in
             self.dismiss(animated: true)
-            //            self.navigationController?.popViewController(animated: true)
+           
             print("Выйти")
         }
         

@@ -9,15 +9,16 @@ import UIKit
 
 class ProfileHeaderView: UIView  {
     
-    let imageView: UIImageView = {
+    private lazy var imageView: UIImageView = {
         
-        let imageView = UIImageView(frame: CGRect(x: 16, y: 16, width: 140, height: 140))
+        let imageView = UIImageView()
+        imageView.frame = CGRect(x: 16, y: 16, width: 140, height: 140)
         imageView.image = UIImage(named: "Pion")
         imageView.layer.cornerRadius = 70
         imageView.layer.borderWidth = 3.0
         imageView.layer.masksToBounds = false
         imageView.layer.borderColor = UIColor.white.cgColor
-        imageView.contentMode = .scaleToFill
+        imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         return imageView
     }()
@@ -53,7 +54,6 @@ class ProfileHeaderView: UIView  {
         button.layer.shadowOpacity = 0.7
         button.addTarget(self, action: #selector(self.buttonPressed), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
-        
         return button
     }()
     
@@ -71,7 +71,7 @@ class ProfileHeaderView: UIView  {
         self.addSubview(self.statusButton)
         
         NSLayoutConstraint.activate([statusLabel.leadingAnchor.constraint(equalTo: self.NameLabel.leadingAnchor), statusLabel.bottomAnchor.constraint(equalTo: self.NameLabel.bottomAnchor, constant: 60), statusButton.leadingAnchor.constraint(equalTo: imageView.leadingAnchor), statusButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),statusButton.topAnchor.constraint(equalTo: self.imageView.bottomAnchor, constant: 16),statusButton.heightAnchor.constraint(equalToConstant: 50),
-            statusButton.bottomAnchor.constraint(equalTo: self.statusButton.topAnchor, constant: -30)])
+                                    ])
     }
     
     @objc private func buttonPressed (){

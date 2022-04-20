@@ -10,6 +10,17 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     
+    func setupNavigationBar() {
+        self.navigationItem.title = "Профиль"
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = .white
+        self.setupNavigationBar()//добавляет title запуская функцию
+        self.viewWillLayoutSubviews()
+    }
+    
     private lazy var profileHeaderView: ProfileHeaderView = {
         let view = ProfileHeaderView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -19,28 +30,15 @@ class ProfileViewController: UIViewController {
     override func viewWillLayoutSubviews(){  // это добавляет profileHeaderView на вью
         self.view.addSubview(self.profileHeaderView)
         self.profileHeaderView.backgroundColor = .lightGray
-        let topConstraint = self.profileHeaderView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
-        let leadingConstraint = self.profileHeaderView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor)
-        let trailingConstraint = self.profileHeaderView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor)
-        let bottomConstraint = self.profileHeaderView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
         
         NSLayoutConstraint.activate([
-            topConstraint, leadingConstraint, trailingConstraint,bottomConstraint
+            profileHeaderView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+            profileHeaderView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
+            profileHeaderView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
+            profileHeaderView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
         ])
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = .white
-        self.setupNavigationBar()//добавляет title запуская функцию
-        //view.addSubview(imageView)// добавляет фото
-    }
-    
-    func setupNavigationBar() {
-        
-        self.navigationItem.title = "Профиль"
-    }
-    
-    
 }
+
