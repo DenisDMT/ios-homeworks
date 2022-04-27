@@ -25,10 +25,10 @@ class MyTabBarController: UITabBarController {
         
         
         lenta.tabBarItem.title = "Лента"
-        lenta.tabBarItem.image = UIImage(systemName: "heart.fill")//moon.stars.fill, externaldrive.badge.plus
+        lenta.tabBarItem.image = UIImage(systemName: "building.columns.fill")//moon.stars.fill, externaldrive.badge.plus, sun.and.horizon,figure.wave, suit.spade.fill,airtag.fill, brain.head.profile
         
         profile.tabBarItem.title = "Профиль"
-        profile.tabBarItem.image = UIImage(systemName: "person.circle")//heart.fill , square.stack.3d.down.right.fill
+        profile.tabBarItem.image = UIImage(systemName: "person.fill")//heart.fill , square.stack.3d.down.right.fill, building.columns.fill
         let navControllerFirst = UINavigationController(rootViewController: lenta)
         
         let navControllerSecond = UINavigationController(rootViewController: profile)

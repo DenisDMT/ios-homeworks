@@ -18,7 +18,6 @@ class InfoViewController: UIViewController {
     
     private func alertButton(){
         let button = UIButton(frame: CGRect(x: 50, y: 700, width: 300, height: 50))
-        //button.center = view.center// кнопка будет по центру
         button.setTitle("Показать оповещение", for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 15

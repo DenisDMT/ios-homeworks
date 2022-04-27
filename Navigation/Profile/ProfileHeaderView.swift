@@ -12,20 +12,20 @@ class ProfileHeaderView: UIView  {
     private lazy var imageView: UIImageView = {
         
         let imageView = UIImageView()
-        imageView.frame = CGRect(x: 16, y: 16, width: 140, height: 140)
+        imageView.frame = CGRect(x: 16, y: 16, width: 160, height: 160)
         imageView.image = UIImage(named: "Pion")
-        imageView.layer.cornerRadius = 70
+        imageView.layer.cornerRadius = 80
         imageView.layer.borderWidth = 3.0
         imageView.layer.masksToBounds = false
         imageView.layer.borderColor = UIColor.white.cgColor
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .redraw
         imageView.clipsToBounds = true
         return imageView
     }()
     
     private lazy var NameLabel: UILabel = {
         let label = UILabel()
-        label.frame = CGRect(x: 180, y: 27, width: 135, height: 30)
+        label.frame = CGRect(x: 200, y:47, width: 135, height: 30)
         label.text = "Pion"
         label.textColor = .black
         label.font = UIFont(name: "Helvetica-Bold", size: 18)
@@ -38,7 +38,8 @@ class ProfileHeaderView: UIView  {
         label.text = "Fire the salvo!"
         label.textColor = .gray
         label.font = UIFont(name: "Helvetica-Regular", size: 14)
-        label.translatesAutoresizingMaskIntoConstraints = false
+        label.translatesAutoresizingMaskIntoConstraints = true
+        label.frame = CGRect(x: 200, y: 118, width: 135, height: 30)
         return label
     }()
     
@@ -53,7 +54,8 @@ class ProfileHeaderView: UIView  {
         button.layer.shadowRadius = 4
         button.layer.shadowOpacity = 0.7
         button.addTarget(self, action: #selector(self.buttonPressed), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
+        button.translatesAutoresizingMaskIntoConstraints = true
+        button.frame = CGRect(x: 16, y: 192, width: 384, height: 50)
         return button
     }()
     
@@ -70,8 +72,6 @@ class ProfileHeaderView: UIView  {
         self.addSubview(self.statusLabel)
         self.addSubview(self.statusButton)
         
-        NSLayoutConstraint.activate([statusLabel.leadingAnchor.constraint(equalTo: self.NameLabel.leadingAnchor), statusLabel.bottomAnchor.constraint(equalTo: self.NameLabel.bottomAnchor, constant: 60), statusButton.leadingAnchor.constraint(equalTo: imageView.leadingAnchor), statusButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),statusButton.topAnchor.constraint(equalTo: self.imageView.bottomAnchor, constant: 16),statusButton.heightAnchor.constraint(equalToConstant: 50),
-                                    ])
     }
     
     @objc private func buttonPressed (){

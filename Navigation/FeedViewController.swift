@@ -31,8 +31,7 @@ class FeedViewController: UIViewController {
     
     private func myButton() {
         
-        let button = UIButton(frame: CGRect(x: 50, y: 700, width: 300, height: 50))
-        //button.center = view.center// кнопка будет по центру
+        let button = UIButton(frame: CGRect(x: 50, y: 700, width: 330, height: 50))
         button.setTitle("Перейти в пост", for: .normal)
         button.backgroundColor = .green
         button.layer.cornerRadius = 15
